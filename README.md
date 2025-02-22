@@ -5,9 +5,6 @@
     <a href="https://www.stomper.cloud/">
         <img src="https://img.shields.io/badge/Docs-4285F4?style=for-the-badge&logo=Google-chrome&logoColor=white" alt="Docs">
     </a>
-    <a href="#">
-        <img src="https://img.shields.io/badge/pypi-3775A9?style=for-the-badge&logo=pypi&logoColor=white" alt="PyPi">
-    </a>
     <a href="https://hub.docker.com/repository/docker/joseluishd/stomper/general">
         <img src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
     </a>

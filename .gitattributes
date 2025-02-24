@@ -17,7 +17,7 @@
 *.c              linguist-detectable=true   linguist-language=C
 *.sh             linguist-detectable=true   linguist-language=Shell
 *.bat            linguist-detectable=true   linguist-language=Batchfile
-*.cmake          linguist-detectable=true   linguist-language=Shell
+*.cmake          linguist-detectable=true   linguist-language=Cmake
 CMakeLists.txt   linguist-detectable=true   linguist-language=CMake
 
 # Automatically detect the end of lines if the type is not defined

@@ -1,0 +1,149 @@
+# This file is part of the Stomper project.
+#
+# Licensed under the BSD 3-Clause License (the "License"); a copy of the License
+# is included with this project. You may also obtain a copy of the License at:
+#
+#     https://opensource.org/licenses/BSD-3-Clause
+#
+# Additional licenses for third-party dependencies are also included
+# and must be reviewed separately.
+
+# Base Documentation: https://clang.llvm.org/docs/ClangFormatStyleOptions.html
+
+---
+
+# Base Style Configuration
+Language: Cpp
+UseTab: Never
+IndentWidth: 4
+ConstructorInitializerIndentWidth: 4
+ContinuationIndentWidth: 4
+BracedInitializerIndentWidth: 4
+PPIndentWidth: 4
+ColumnLimit: 100
+AccessModifierOffset: -2
+PointerAlignment: Left
+ReferenceAlignment: Left
+ShortNamespaceLines: 5
+MaxEmptyLinesToKeep: 2
+
+# General Rules
+AllowAllArgumentsOnNextLine: true
+AllowAllParametersOfDeclarationOnNextLine: true
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortEnumsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+AlwaysBreakBeforeMultilineStrings: false
+BinPackArguments: true
+BreakAfterJavaFieldAnnotations: true
+VerilogBreakBetweenInstancePorts: false
+BreakBeforeTernaryOperators: true
+AlignTrailingComments: false
+BinPackParameters: true
+BreakStringLiterals: true
+CompactNamespaces: false
+BreakBeforeConceptDeclarations: true
+Cpp11BracedListStyle: false
+DerivePointerAlignment: false
+FixNamespaceComments: false
+IndentAccessModifiers: true
+IndentCaseBlocks: true
+IndentCaseLabels: true
+IndentGotoLabels: true
+IndentWrappedFunctionNames: true
+AllowShortCompoundRequirementOnASingleLine: true
+BreakAdjacentStringLiterals: false
+KeepEmptyLinesAtTheStartOfBlocks: true
+InsertNewlineAtEOF: true
+IndentRequiresClause: false
+SpaceBeforeCtorInitializerColon: false
+SpaceAfterCStyleCast: false
+SpaceBeforeInheritanceColon: true
+SpaceAfterLogicalNot: false
+SpaceBeforeCpp11BracedList: false
+SpaceBeforeCaseColon: false
+SpaceAfterTemplateKeyword: false
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeRangeBasedForLoopColon: true
+SpaceBeforeSquareBrackets: false
+SpaceInEmptyBlock: false
+SpacesInContainerLiterals: true
+SpacesInSquareBrackets: false
+SpaceBeforeParensOptions:
+  AfterControlStatements: true
+  AfterForeachMacros: true
+  AfterFunctionDeclarationName: false
+  AfterFunctionDefinitionName: false
+  AfterIfMacros: true
+  AfterOverloadedOperator: false
+  AfterPlacementOperator: false
+  AfterRequiresInClause: false
+  AfterRequiresInExpression: false
+  BeforeNonEmptyParentheses: false
+SpacesInParensOptions:
+  InConditionalStatements: false
+  InCStyleCasts: false
+  InEmptyParentheses: false
+  Other: false
+AlignConsecutiveShortCaseStatements:
+  Enabled: true
+  AcrossEmptyLines: true
+  AcrossComments: true
+  AlignCaseColons: true
+BraceWrapping:
+  AfterCaseLabel: false
+  AfterClass: false
+  AfterControlStatement: Never
+  AfterEnum: false
+  AfterFunction: false
+  AfterNamespace: false
+  AfterStruct: false
+  AfterUnion: false
+  AfterExternBlock: false
+  BeforeCatch: false
+  BeforeElse: false
+  BeforeLambdaBody: false
+  BeforeWhile: false
+  IndentBraces: false
+  SplitEmptyRecord: false
+  SplitEmptyNamespace: false
+
+# General Styles
+AlignAfterOpenBracket: BlockIndent
+AlignArrayOfStructures: Left
+AlignConsecutiveAssignments: None
+AlignConsecutiveBitFields: None
+AlignConsecutiveDeclarations: None
+AlignConsecutiveMacros: AcrossEmptyLinesAndComments
+AlignEscapedNewlines: Right
+AlignOperands: Align
+AllowShortBlocksOnASingleLine: Always
+AllowShortFunctionsOnASingleLine: Empty
+AlwaysBreakAfterReturnType: None
+AllowShortIfStatementsOnASingleLine: WithoutElse
+AllowShortLambdasOnASingleLine: Empty
+BitFieldColonSpacing: Both
+BreakBeforeBraces: Custom
+BreakBeforeBinaryOperators: None
+BreakConstructorInitializers: AfterColon
+EmptyLineAfterAccessModifier: Never
+EmptyLineBeforeAccessModifier: Never
+IncludeBlocks: Regroup
+IndentExternBlock: Indent
+IndentPPDirectives: BeforeHash
+InsertTrailingCommas: None
+AllowBreakBeforeNoexceptSpecifier: Never
+BreakAfterAttributes: Always
+BreakBeforeInlineASMColon: OnlyMultiline
+LambdaBodyIndentation: Signature
+NamespaceIndentation: None
+PackConstructorInitializers: NextLine
+RequiresClausePosition: OwnLine
+RequiresExpressionIndentation: OuterScope
+SeparateDefinitionBlocks: Always
+SortIncludes: CaseSensitive
+SortUsingDeclarations: LexicographicNumeric
+SpaceAroundPointerQualifiers: Default
+SpaceBeforeParens: Custom
+SpacesInAngles: Never
+SpacesInParens: Custom

@@ -11,7 +11,7 @@
 include(FetchContent)
 
 # https://github.com/catchorg/Catch2
-# Check: third-party/catch2_license.dat
+# Check: third-party/catch2.dat
 FetchContent_Declare(
         catch2
         GIT_REPOSITORY https://github.com/catchorg/Catch2.git

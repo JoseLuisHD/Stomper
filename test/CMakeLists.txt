@@ -8,10 +8,9 @@
 # Additional licenses for third-party dependencies are also included
 # and must be reviewed separately.
 
-# Code Editors
-/.idea/
-/.vs/
-/.vscode/
+set(TEST_TARGET_NAME "${PROJECT_NAME}-tests")
 
-# CMake
-/cmake-build-*/
+add_executable(${TEST_TARGET_NAME} ${STOMPER_TEST_SOURCES} ${STOMPER_SOURCES})
+
+target_include_directories(${TEST_TARGET_NAME} PRIVATE ${STOMPER_INCLUDE} ${STOMPER_TMP_INCLUDE} ${STOMPER_SDK_INCLUDE})
+target_link_libraries(${TEST_TARGET_NAME} PRIVATE Catch2::Catch2WithMain)

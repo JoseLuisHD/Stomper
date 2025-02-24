@@ -8,10 +8,13 @@
 # Additional licenses for third-party dependencies are also included
 # and must be reviewed separately.
 
-# Code Editors
-/.idea/
-/.vs/
-/.vscode/
+include(FetchContent)
 
-# CMake
-/cmake-build-*/
+# https://github.com/catchorg/Catch2
+# Check: third-party/catch2_license.dat
+FetchContent_Declare(
+        catch2
+        GIT_REPOSITORY https://github.com/catchorg/Catch2.git
+        GIT_TAG v3.8.0
+)
+FetchContent_MakeAvailable(catch2)

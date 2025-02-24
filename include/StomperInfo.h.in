@@ -1,0 +1,20 @@
+// This file is part of the Stomper project.
+//
+// Licensed under the BSD 3-Clause License (the "License"); a copy of the License
+// is included with this project. You may also obtain a copy of the License at:
+//
+//     https://opensource.org/licenses/BSD-3-Clause
+//
+// Additional licenses for third-party dependencies are also included
+// and must be reviewed separately.
+
+#ifndef STOMPER_INFO_H
+#define STOMPER_INFO_H
+
+#define STOMPER_VERSION     "@STOMPER_VERSION@"
+#define STOMPER_SYSTEM_NAME "@STOMPER_SYSTEM_NAME@"
+#define STOMPER_SYSTEM_ARCH "@STOMPER_SYSTEM_ARCH@"
+#define STOMPER_BUILD_TYPE  "@STOMPER_BUILD_TYPE@"
+#define STOMPER_BUILD_DATE  "@STOMPER_BUILD_DATE@"
+
+#endif //STOMPER_INFO_H

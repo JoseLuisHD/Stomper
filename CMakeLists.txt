@@ -25,6 +25,8 @@ set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake" ${CMAKE_MODULE_PATH})
 include(ProjectVariables)
 include(ProjectEnvironment)
 include(ProjectDependencies)
+include(ProjectDebugProfile)
+include(ProjectReleaseProfile)
 
 add_executable(Stomper ${STOMPER_LAUNCHER_SOURCE})
 

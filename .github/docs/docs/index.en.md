@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="assets/stomper.webp" width="150px" height="150px" alt="banner">
+    <img src="https://www.stomper.cloud/assets/stomper.webp" width="150px" height="150px" alt="banner">
 </div>
 
 **Stomper: A High-Performance C/C++ Minecraft Bedrock Server and Proxy Solution**

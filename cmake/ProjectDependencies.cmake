@@ -17,4 +17,15 @@ FetchContent_Declare(
         GIT_REPOSITORY https://github.com/catchorg/Catch2.git
         GIT_TAG v3.8.0
 )
+
+# https://github.com/bombela/backward-cpp
+# Check: third-party/backward.dat
+FetchContent_Declare(
+        backward
+        GIT_REPOSITORY https://github.com/bombela/backward-cpp.git
+        GIT_TAG v1.6
+)
+
+
 FetchContent_MakeAvailable(catch2)
+FetchContent_MakeAvailable(backward)

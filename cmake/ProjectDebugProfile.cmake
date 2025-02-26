@@ -96,8 +96,9 @@ endfunction()
 # Include sanitizers in the build if the profile is debug and is selected.
 # Some sanitizers are not compatible with each other, so it is best to generate a separate binary for each.
 if(CMAKE_BUILD_TYPE MATCHES "Debug")
-    set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -g -O0")
-    set(CMAKE_C_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -g -O0")
+    set(DEBUG_FLAGS "-g -O0")
+    set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} ${DEBUG_FLAGS}")
+    set(CMAKE_C_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} ${DEBUG_FLAGS}")
 
     if(STOMPER_DEBUG_ASAN)
         project_configure_asan()

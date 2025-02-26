@@ -9,8 +9,11 @@
 // and must be reviewed separately.
 
 #include <iostream>
+#include "backward.hpp"
+
+constexpr backward::SignalHandling sh;
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    std::cout << "Hello World" << std::endl;
     return 0;
 }

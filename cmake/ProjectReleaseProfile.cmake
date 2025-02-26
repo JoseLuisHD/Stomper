@@ -9,13 +9,12 @@
 # and must be reviewed separately.
 
 if(CMAKE_BUILD_TYPE MATCHES "Release")
-    set(RELEASE_FLAGS "-O3 -DNDEBUG -flto -ffunction-sections -fdata-sections")
-    set(RELEASE_FLAGS "${RELEASE_FLAGS} -Wl,--gc-sections")
+    set(RELEASE_FLAGS "-O3 -DNDEBUG -flto -ffunction-sections -fdata-sections -fno-omit-frame-pointer")
 
     set(CMAKE_CXX_FLAGS_RELEASE ${CMAKE_CXX_FLAGS_RELEASE} ${RELEASE_FLAGS})
     set(CMAKE_C_FLAGS_RELEASE ${CMAKE_C_FLAGS_RELEASE} ${RELEASE_FLAGS})
 
-    set(CMAKE_EXE_LINKER_FLAGS_RELEASE "${CMAKE_EXE_LINKER_FLAGS_RELEASE} -Wl,--export-dynamic -Wl,--strip-debug")
+    set(CMAKE_EXE_LINKER_FLAGS_RELEASE "${CMAKE_EXE_LINKER_FLAGS_RELEASE} -Wl,--gc-sections -Wl,--export-dynamic -Wl,--strip-debug")
 
     message(STATUS "Release optimization enabled")
 endif()

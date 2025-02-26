@@ -30,9 +30,15 @@ include(ProjectReleaseProfile)
 
 add_executable(Stomper ${STOMPER_LAUNCHER_SOURCE})
 
-target_sources(${PROJECT_NAME} PRIVATE ${STOMPER_SOURCES})
+target_sources(${PROJECT_NAME}
+        PRIVATE ${STOMPER_SOURCES})
+
 target_include_directories(${PROJECT_NAME}
         PRIVATE ${STOMPER_INCLUDE} ${STOMPER_TMP_INCLUDE}
         PUBLIC ${STOMPER_SDK_INCLUDE})
 
-ADD_SUBDIRECTORY(${STOMPER_TEST_DIR})
+target_link_libraries(${PROJECT_NAME}
+        PRIVATE backward)
+
+add_subdirectory(${STOMPER_TEST_DIR})
+add_backward(${PROJECT_NAME})
